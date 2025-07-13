@@ -13,6 +13,7 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/chewxy/math32 v1.10.1 // indirect
 	github.com/cogentcore/webgpu v0.23.0 // indirect
+	github.com/cogentcore/yaegi v0.0.0-20240724064145-e32a03faad56 // indirect
 	github.com/dlclark/regexp2 v1.11.0 // indirect
 	github.com/ericchiang/css v1.3.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
