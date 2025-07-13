@@ -6,7 +6,7 @@ author = ["Kai O'Reilly", "Randy O'Reilly"]
 
 Today we are announcing the initial public release of the Cogent Core GUI framework. Cogent Core allows you to build powerful, fast, elegant apps that run on all platforms with a single Go codebase, allowing you to Code Once, Run Everywhere (Core). This blog is an interactive Cogent Core app running on the web using [wasm](https://en.wikipedia.org/wiki/WebAssembly). The same code can run on macOS, Windows, Linux, iOS, Android, and the web through a command line tool that manages all the details for running and building apps for each platform.
 
-![The same Cogent Core app running on many devices using the same code](../media/initial-release/devices.jpg)
+![The same Cogent Core app running on many devices using the same code](media/initial-release/devices.jpg)
 
 *The same Cogent Core app running on many devices using the same code*
 
@@ -96,7 +96,7 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
 
-![Screenshot of Cogent Core 3D Demo](../media/initial-release/xyz-demo.jpg)
+![Screenshot of Cogent Core 3D Demo](media/initial-release/xyz-demo.jpg)
 
 *Screenshot of Cogent Core 3D Demo*
 
@@ -116,7 +116,7 @@ The initial version of this software was named [GoKi](https://github.com/goki/gi
 
 The only thing missing from the Go ecosystem at the time was a full-featured native GUI framework, so Randy built on his experience with [Qt](https://en.wikipedia.org/wiki/Qt_(software)) to write one in Go. GoKi provided a powerful 2D and 3D interface that enabled experts, as well as undergraduate and graduate students in classes taught by professors around the world, to better understand and develop new ideas about how the brain works. However, as a first effort in Go, GoKi retained too much of the C++ style.
 
-![Screenshot of a neural network model built with Cogent Core](../media/initial-release/emer-choose.jpg)
+![Screenshot of a neural network model built with Cogent Core](media/initial-release/emer-choose.jpg)
 
 *Screenshot of a neural network model built with Cogent Core*
 
@@ -126,7 +126,7 @@ So the father and son team (more son than father, to be clear) spent the next ye
 
 Throughout this process, Randy maintained what is now [Cogent Code](https://cogentcore.org/cogent/code) as his primary everyday code editor, and students and colleagues explored and extended the neural network models based on this framework. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
 
-![Screenshot of Cogent Code](../media/initial-release/cogent-code.jpg)
+![Screenshot of Cogent Code](media/initial-release/cogent-code.jpg)
 
 *Screenshot of Cogent Code*
 
@@ -142,7 +142,7 @@ In addition, we will continue working on a shell language variant of Go, called 
 
 We will also be completing the [Cogent Canvas](https://cogentcore.org/cogent/canvas) app for editing SVG vector graphics, the [Cogent Mail](https://github.com/cogentcore/cogent/tree/main/mail) client, a [terminal emulator](https://github.com/cogentcore/cogent/tree/main/terminal), and a [3D modeling app](https://github.com/cogentcore/cogent/tree/main/craft). We also plan to make a video editor and continue working on a [web browser](https://github.com/cogentcore/cogent/tree/main/web).
 
-![Screenshot of Cogent Canvas](../media/initial-release/cogent-canvas.jpg)
+![Screenshot of Cogent Canvas](media/initial-release/cogent-canvas.jpg)
 
 *Screenshot of Cogent Canvas*
 
