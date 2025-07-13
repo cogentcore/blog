@@ -10,6 +10,8 @@ import (
 	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
 	"cogentcore.org/core/htmlcore"
+	"cogentcore.org/core/icons"
+	"cogentcore.org/core/tree"
 	_ "cogentcore.org/core/yaegicore"
 )
 
@@ -19,9 +21,29 @@ var econtent embed.FS
 func main() {
 	b := core.NewBody("Cogent Blog")
 	ct := content.NewContent(b).SetContent(econtent)
-	ct.Context.AddWikilinkHandler(htmlcore.GoDocWikilink("doc", "cogentcore.org"))
+	ctx := ct.Context
+	ctx.AddWikilinkHandler(htmlcore.GoDocWikilink("doc", "cogentcore.org"))
 	b.AddTopBar(func(bar *core.Frame) {
-		core.NewToolbar(bar).Maker(ct.MakeToolbar)
+		tb := core.NewToolbar(bar)
+		tb.Maker(ct.MakeToolbar)
+		tb.Maker(func(p *tree.Plan) {
+			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://youtube.com/@CogentCore")
+				w.SetText("Videos").SetIcon(icons.VideoLibrary)
+			})
+			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://github.com/cogentcore")
+				w.SetText("GitHub").SetIcon(icons.GitHub)
+			})
+			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://cogentcore.org/community")
+				w.SetText("Community").SetIcon(icons.Forum)
+			})
+			tree.Add(p, func(w *core.Button) {
+				ctx.LinkButton(w, "https://github.com/sponsors/cogentcore")
+				w.SetText("Sponsor").SetIcon(icons.Favorite)
+			})
+		})
 	})
 	b.RunMainWindow()
 }
