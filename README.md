@@ -1,2 +1,3 @@
-# blog
-The Cogent Blog
+# Cogent Blog
+
+The [Cogent Blog](https://cogentcore.org/blog).
