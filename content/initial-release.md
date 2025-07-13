@@ -1,5 +1,7 @@
 +++
-author = ["Kai O'Reilly", "Randy O'Reilly"]
+Authors = ["Kai O'Reilly", "Randy O'Reilly"]
+Date = "2024-07-24"
+Categories = ["Posts"]
 +++
 
 *For a video introduction to Cogent Core, see https://youtu.be/nZzdy3Kyypk*
