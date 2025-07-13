@@ -96,17 +96,17 @@ The key feature of Cogent Core is that it allows you to efficiently write full-s
 
 * Automatic views of any Go data structure, including slices, structs, and maps, allow for instant data binding and advanced app inspection, making complex widgets like editable tables, trees, and forms take just one line of code.
 
-* [SVG](https://cogentcore.org/core/widgets/media/svg), [HTML](https://cogentcore.org/core/widgets/other/html), [Markdown](https://cogentcore.org/core/widgets/other/html), [Canvas](https://cogentcore.org/core/widgets/media/canvases), [Video](https://www.cogentcore.org/core/widgets/media/videos), and [3D](https://www.cogentcore.org/core/widgets/other/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
+* [SVG](https://cogentcore.org/core/svg), [HTML](https://cogentcore.org/core/html), [Markdown](https://cogentcore.org/core/html#markdown), [Canvas](https://cogentcore.org/core/canvas), [Video](https://www.cogentcore.org/core/video), and [3D](https://www.cogentcore.org/core/xyz) support make it possible to create engaging multimedia experiences from 3D models to games, and documentation and blogs like you're reading now.
 
 ![Screenshot of Cogent Core 3D Demo](media/initial-release/xyz-demo.jpg)
 
 *Screenshot of Cogent Core 3D Demo*
 
-* [Plans](https://cogentcore.org/core/basics/plans) provide an efficient mechanism for dynamically updating content in a way that captures the best of imperative and declarative GUI paradigms.
+* [Plans](https://cogentcore.org/core/plan) provide an efficient mechanism for dynamically updating content in a way that captures the best of imperative and declarative GUI paradigms.
 
 * A focus on keyboard navigation and user customization enables streamlined access to important functionality with any keybindings, with a dynamic search bar giving convenient access to all app actions on every platform.
 
-* [Vulkan](https://en.wikipedia.org/wiki/Vulkan), a modern, cross-platform, high-performance graphics framework, allows apps to run on all platforms at extremely fast speeds. All Cogent Core apps compile to machine code, allowing them to run without any overhead.
+* [WebGPU](https://en.wikipedia.org/wiki/WebGPU), a modern, cross-platform, high-performance graphics framework, allows apps to run on all platforms at fast speeds. All Cogent Core apps compile to machine code, allowing them to run without overhead.
 
 * Cogent Core is completely free and open source under the permissive [BSD-3 License](https://github.com/cogentcore/core/blob/main/LICENSE), allowing you to use it for any purpose, commercially or personally. We believe that software works best when everyone can use it.
 
@@ -124,7 +124,7 @@ The only thing missing from the Go ecosystem at the time was a full-featured nat
 
 Meanwhile, Randy's son Kai was busy experimenting with different frameworks and languages for various coding projects. He eventually came to the same conclusion that Go is truly the best language around. After exploring existing GUI frameworks in Go, Kai decided that a major overhaul of GoKi might produce a better framework than any of the other options.
 
-So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/architecture/principles) capture some of our hard-won lessons. We hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
+So the father and son team (more son than father, to be clear) spent the next year rewriting this codebase many times over, peeling away layers of complexity and finding the most robust and elegant solutions to the many problems such a framework must solve. The [principles](https://cogentcore.org/core/principles) capture some of our hard-won lessons. We hope that the experience of using this framework demonstrates the resulting simplicity and power of the approach.
 
 Throughout this process, Randy maintained what is now [Cogent Code](https://cogentcore.org/cogent/code) as his primary everyday code editor, and students and colleagues explored and extended the neural network models based on this framework. Therefore, the core of the framework is well-tested and ready to use, even as we continue to build out more features and welcome input from the broader community for how to make it even better.
 
@@ -140,7 +140,7 @@ We think Go is such a special language that it deserves to be used for everythin
 
 One important future direction, highlighted by the interactive editing ability shown above, is to use the [yaegi](https://github.com/traefik/yaegi) Go interpreter as a replacement for languages like Python so that you can transparently have a dynamic, interpreted experience as well as the lightning-fast compilation of Go. We think this can provide an ideal combination of rapid prototyping and hot-reloading (as in the Flutter framework), within a strongly typed and robust language that scales to large-scale applications (unlike Python and JavaScript).
 
-In addition, we will continue working on a shell language variant of Go, called `cosh` or [Cogent Shell](https://github.com/cogentcore/core/tree/main/shell), which allows direct intermixing of shell-like execution of command-line tools with standard Go code using yaegi. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the [Cogent Numbers](https://github.com/cogentcore/cogent/tree/main/numbers) framework, to provide a viable competitor in this Python-dominated space.
+In addition, we will continue working on a shell language variant of Go, called [goal](https://github.com/cogentcore/lab/tree/main/goal), which allows direct intermixing of shell-like execution of command-line tools with standard Go code using yaegi. Everything can be transpiled into standard Go and built the usual way as a fully compiled executable as well. Next, we plan to extend this general approach to the numerical computing and data science domain, in the [Cogent Lab](https://www.cogentcore.org/lab/) framework, to provide a viable competitor in this Python-dominated space.
 
 We will also be completing the [Cogent Canvas](https://cogentcore.org/cogent/canvas) app for editing SVG vector graphics, the [Cogent Mail](https://github.com/cogentcore/cogent/tree/main/mail) client, a [terminal emulator](https://github.com/cogentcore/cogent/tree/main/terminal), and a [3D modeling app](https://github.com/cogentcore/cogent/tree/main/craft). We also plan to make a video editor and continue working on a [web browser](https://github.com/cogentcore/cogent/tree/main/web).
 
@@ -164,7 +164,7 @@ Most of the world's GUI software is written using one of the many web frameworks
 
 * Web frameworks are plagued by browser inconsistencies, making things as simple as favicons the subject of [blog posts](https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7) featuring language like “nightmare” and “how to maintain sanity.” Cogent Core apps automatically work consistently across all devices.
 
-The benefits of Cogent Core relative to the web are highlighted by our [tic-tac-toe tutorial](https://www.cogentcore.org/core/tutorials/tic-tac-toe), which has fewer than half the lines of code of the [React one](https://react.dev/learn/tutorial-tic-tac-toe), while also containing no ternaries and no JSX.
+The benefits of Cogent Core relative to the web are highlighted by our [tic-tac-toe tutorial](https://www.cogentcore.org/core/tic-tac-toe-tutorial), which has fewer than half the lines of code of the [React one](https://react.dev/learn/tutorial-tic-tac-toe), while also containing no ternaries and no JSX.
 
 ### Flutter
 
@@ -190,7 +190,7 @@ Although [Flutter](https://flutter.dev) can be good for creating simple mobile a
 }
 ```
 
-Cogent Core uses [plans](https://cogentcore.org/core/basics/plans) to allow for elegant integration of imperative and declarative logic.
+Cogent Core uses [plans](https://cogentcore.org/core/plan) to allow for elegant integration of imperative and declarative logic.
 
 * Flutter contains a lot of repetitive boilerplate, such as `Widget build(BuildContext context)`, and is peppered with distracting keywords like `final`, `required`, and `@override`. Cogent Core works to avoid boilerplate and contains few keywords due to Go’s emphasis on simplicity.
 
@@ -202,7 +202,7 @@ Many apps are written using languages specific to certain platforms, such as Swi
 
 * [Fyne](https://fyne.io) is "fine" overall, but it does not provide the customization and advanced widgets necessary for building powerful apps. Cogent Core enables complete customization and provides a vast array of useful widgets.
 
-* [Gio](https://gioui.org) has a lot of powerful features, but the low-level nature of the immediate mode design makes it difficult to develop apps since even simple things like making a button with text and an icon can take [30 lines of code](https://git.sr.ht/~eliasnaur/gio-example/tree/main/kitchen/kitchen.go#L225). In Cogent Core, it only takes one line of code to make a button with text and an icon.
+* [Gio](https://gioui.org) has a lot of powerful features, but the low-level nature of the immediate mode design makes it difficult to develop apps since even simple things like making a button with text and an icon can take [30 lines of code](https://git.sr.ht/~eliasnaur/gio-example/tree/0d07110b579160a832bcd13bcd7bcf636f06aecd/item/kitchen/kitchen.go#L219). In Cogent Core, it only takes one line of code to make a button with text and an icon.
 
 * [Wails](https://wails.io), [go-app](https://go-app.dev), and other such packages suffer many of the same issues as standard web frameworks, as you are still effectively writing JS, HTML, and CSS. Cogent Core allows you to completely bypass web languages and write everything in Go.
 
