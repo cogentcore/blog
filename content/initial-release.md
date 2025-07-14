@@ -64,13 +64,13 @@ Again, you can modify any of the code above and immediately see the effects!
 
 You can even make interactive plots of data:
 
-```Go
+```Goal
 type Data struct {
 	Time   float32
 	Users  float32
 	Profit float32
 }
-plotcore.NewPlotEditor(b).SetSlice([]Data{
+plotcore.NewEditor(b).SetSlice([]Data{
     {0, 500, 1520},
     {1, 800, 860},
     {2, 1600, 930},
