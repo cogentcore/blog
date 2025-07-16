@@ -3,8 +3,8 @@ module github.com/cogentcore/blog
 go 1.23.4
 
 require (
-	cogentcore.org/core v0.3.12-0.20250716185014-9cff12b618f7
-	cogentcore.org/lab v0.1.2-0.20250716200344-4424638a226b
+	cogentcore.org/core v0.3.12
+	cogentcore.org/lab v0.1.2
 )
 
 require (
