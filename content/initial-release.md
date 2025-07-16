@@ -64,7 +64,7 @@ Again, you can modify any of the code above and immediately see the effects!
 
 You can even make interactive plots of data:
 
-```Goal
+```Go
 type Data struct {
 	Time   float32
 	Users  float32

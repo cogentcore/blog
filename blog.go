@@ -7,6 +7,7 @@ package main
 import (
 	"embed"
 	"image/color"
+	"reflect"
 
 	"cogentcore.org/core/content"
 	"cogentcore.org/core/core"
@@ -14,7 +15,9 @@ import (
 	"cogentcore.org/core/htmlcore"
 	"cogentcore.org/core/icons"
 	"cogentcore.org/core/tree"
-	_ "cogentcore.org/lab/yaegilab"
+	_ "cogentcore.org/core/yaegicore"
+	"cogentcore.org/core/yaegicore/coresymbols"
+	"cogentcore.org/lab/plotcore"
 )
 
 //go:embed content
@@ -47,6 +50,10 @@ func main() {
 			})
 		})
 	})
+
+	coresymbols.Symbols["cogentcore.org/lab/plotcore/plotcore"] = map[string]reflect.Value{
+		"NewEditor": reflect.ValueOf(plotcore.NewEditor),
+	}
 
 	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
 		type theme struct {
