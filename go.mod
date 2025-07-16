@@ -2,7 +2,10 @@ module github.com/cogentcore/blog
 
 go 1.23.4
 
-require cogentcore.org/core v0.3.11
+require (
+	cogentcore.org/core v0.3.12-0.20250716185014-9cff12b618f7
+	cogentcore.org/lab v0.1.2-0.20250716200344-4424638a226b
+)
 
 require (
 	github.com/Bios-Marcel/wastebasket/v2 v2.0.3 // indirect
@@ -13,7 +16,7 @@ require (
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/chewxy/math32 v1.10.1 // indirect
 	github.com/cogentcore/webgpu v0.23.0 // indirect
-	github.com/cogentcore/yaegi v0.0.0-20240724064145-e32a03faad56 // indirect
+	github.com/cogentcore/yaegi v0.0.0-20250622201820-b7838bdd95eb // indirect
 	github.com/dlclark/regexp2 v1.11.0 // indirect
 	github.com/ericchiang/css v1.3.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
@@ -32,10 +35,10 @@ require (
 	github.com/tdewolff/parse/v2 v2.7.19 // indirect
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
 	golang.org/x/image v0.25.0 // indirect
-	golang.org/x/mod v0.19.0 // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sync v0.12.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
-	golang.org/x/tools v0.23.0 // indirect
+	golang.org/x/mod v0.25.0 // indirect
+	golang.org/x/net v0.41.0 // indirect
+	golang.org/x/sync v0.15.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/text v0.26.0 // indirect
+	golang.org/x/tools v0.33.0 // indirect
 )
