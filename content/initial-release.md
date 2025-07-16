@@ -75,7 +75,7 @@ plotcore.NewEditor(b).SetSlice([]Data{
     {1, 800, 860},
     {2, 1600, 930},
     {3, 1400, 682},
-})
+}, plotcore.BasicStylers()...)
 ```
 
 ## Key features

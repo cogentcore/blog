@@ -52,7 +52,8 @@ func main() {
 	})
 
 	coresymbols.Symbols["cogentcore.org/lab/plotcore/plotcore"] = map[string]reflect.Value{
-		"NewEditor": reflect.ValueOf(plotcore.NewEditor),
+		"NewEditor":    reflect.ValueOf(plotcore.NewEditor),
+		"BasicStylers": reflect.ValueOf(plotcore.BasicStylers),
 	}
 
 	ctx.ElementHandlers["color-scheme-control"] = func(ctx *htmlcore.Context) bool {
